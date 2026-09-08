@@ -27,6 +27,7 @@
   .nav{padding:var(--sp-5) 0;position:relative;z-index:2;}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-4);flex-wrap:wrap;}
   .nav-wordmark{font-family:var(--font-script);font-size:var(--step-3);color:#fff;}
+  .nav-logo{display:block;height:52px;width:auto;}
 
   .btn{display:inline-flex;align-items:center;gap:var(--sp-2);padding:var(--sp-3) var(--sp-6);border-radius:999px;font-weight:700;font-size:var(--step-0);border:1px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease,color .15s ease;white-space:nowrap;}
   .btn-primary{background:var(--accent);color:var(--on-accent);box-shadow:0 8px 24px rgba(0,0,0,.35);}
@@ -40,7 +41,8 @@
   .hero-scrim{position:absolute;inset:0;z-index:2;background:linear-gradient(100deg,var(--bg) 0%,rgba(13,10,23,.55) 32%,rgba(13,10,23,.15) 68%,rgba(13,10,23,.4) 100%);pointer-events:none;}
   .hero-inner{position:relative;z-index:3;max-width:720px;}
   .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:var(--step--1);color:var(--ink-muted);margin:0 0 var(--sp-4);font-weight:600;}
-  .hero-title{font-family:var(--font-script);font-size:clamp(3.25rem,11vw,6rem);color:#fff;margin:0;line-height:1;text-shadow:var(--glow-shadow,none);}
+  .hero-title{margin:0;line-height:1;}
+  .hero-logo{display:block;width:min(300px,62vw);height:auto;filter:drop-shadow(0 0 14px rgba(178,107,255,.55)) drop-shadow(0 0 40px rgba(178,107,255,.3));}
   .hero-sub{font-family:var(--font-display);font-size:clamp(1.5rem,5vw,var(--step-4));letter-spacing:.06em;margin:var(--sp-3) 0 var(--sp-5);color:var(--accent);}
   .hero-desc{font-size:var(--step-1);color:var(--ink-muted);max-width:50ch;margin:0 0 var(--sp-6);}
   .hero-actions{display:flex;gap:var(--sp-4);flex-wrap:wrap;}
@@ -89,7 +91,7 @@
 
   <header class="nav">
     <div class="wrap nav-inner">
-      <span class="nav-wordmark">Soul Steppers</span>
+      <img class="nav-logo" src="logo.png" alt="Soul Stepping">
       <a class="btn btn-primary" href="#add-your-signupgenius-link">Reserve Your Spot</a>
     </div>
   </header>
@@ -99,7 +101,7 @@
     <div class="hero-scrim" aria-hidden="true"></div>
     <div class="wrap hero-inner">
       <p class="eyebrow">Charlotte, NC · Community Line Dance</p>
-      <h1 class="hero-title">Soul Steppers</h1>
+      <h1 class="hero-title"><img class="hero-logo" src="logo.png" alt="Soul Stepping"></h1>
       <p class="hero-sub">LINE DANCING</p>
       <p class="hero-desc">Step, turn, and move with Charlotte's Soul Steppers — a line dancing class for the community, held at The Park Church Family Life &amp; Conference Center.</p>
       <div class="hero-actions">
