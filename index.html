@@ -60,8 +60,9 @@
   .videos h2{font-family:var(--font-display);font-size:var(--step-4);margin:0 0 var(--sp-2);letter-spacing:.02em;}
   .videos-sub{color:var(--ink-muted);margin:0 0 var(--sp-6);}
   .video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--sp-5);}
-  .video-thumb{aspect-ratio:16/9;border-radius:16px;background:linear-gradient(135deg,var(--surface),var(--bg2));display:flex;align-items:center;justify-content:center;border:1px solid var(--border);}
-  .play-btn{width:56px;height:56px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;color:var(--on-accent);}
+  .video-thumb{aspect-ratio:16/9;border-radius:16px;background:linear-gradient(135deg,var(--surface),var(--bg2));background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);}
+  .play-btn{width:56px;height:56px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;color:var(--on-accent);box-shadow:0 4px 16px rgba(0,0,0,.45);}
+  .waiver-link{margin-top:var(--sp-2);}
   .video-title{margin:var(--sp-3) 0 0;font-weight:600;color:var(--ink-muted);}
 
   .signup{padding:var(--sp-8) 0 var(--sp-9);}
@@ -138,19 +139,19 @@
   <section class="videos" id="videos">
     <div class="wrap">
       <h2>See Soul Steppers In Action</h2>
-      <p class="videos-sub">A few clips from past sessions — add your own from YouTube.</p>
+      <p class="videos-sub">A few clips from past sessions.</p>
       <div class="video-grid">
         <div class="video-card">
-          <div class="video-thumb"><div class="play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7Z"></path></svg></div></div>
-          <p class="video-title">Add a video title</p>
+          <a class="video-thumb" href="https://youtu.be/5ybH07bAvYw" target="_blank" rel="noopener" aria-label="Watch on YouTube" style="background-image:url('https://img.youtube.com/vi/5ybH07bAvYw/hqdefault.jpg');"><div class="play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7Z"></path></svg></div></a>
+          <p class="video-title">Watch on YouTube</p>
         </div>
         <div class="video-card">
-          <div class="video-thumb"><div class="play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7Z"></path></svg></div></div>
-          <p class="video-title">Add a video title</p>
+          <a class="video-thumb" href="https://youtu.be/MGX3ZRoWJ34" target="_blank" rel="noopener" aria-label="Watch on YouTube" style="background-image:url('https://img.youtube.com/vi/MGX3ZRoWJ34/hqdefault.jpg');"><div class="play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7Z"></path></svg></div></a>
+          <p class="video-title">Watch on YouTube</p>
         </div>
         <div class="video-card">
-          <div class="video-thumb"><div class="play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7Z"></path></svg></div></div>
-          <p class="video-title">Add a video title</p>
+          <a class="video-thumb" href="https://youtu.be/R6fXQfOaaYY" target="_blank" rel="noopener" aria-label="Watch on YouTube" style="background-image:url('https://img.youtube.com/vi/R6fXQfOaaYY/hqdefault.jpg');"><div class="play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7Z"></path></svg></div></a>
+          <p class="video-title">Watch on YouTube</p>
         </div>
       </div>
     </div>
@@ -169,6 +170,7 @@
         <div class="detail-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 4h12l-1 8a5 5 0 0 1-10 0L6 4Z"></path><path d="M6 6H3.5A1.5 1.5 0 0 0 2 7.5C2 9 3 10 4.5 10H6M18 6h2.5A1.5 1.5 0 0 1 22 7.5C22 9 21 10 19.5 10H18"></path></svg></div>
         <h2>Bring Your Waiver</h2>
         <p>Every dancer completes a waiver before class.</p>
+        <a class="btn btn-ghost waiver-link" href="Park Church Waiver.docx" target="_blank" rel="noopener">Download the Waiver</a>
       </div>
     </div>
   </section>
